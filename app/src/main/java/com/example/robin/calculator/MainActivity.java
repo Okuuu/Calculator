@@ -195,6 +195,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseAddition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                signe = 1; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -206,6 +210,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseSoustraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 2; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -217,16 +225,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 3; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
             }
         });
 
-        //Gestion de la mutliplication
+        //Gestion de la Division
         CaseDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 4; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
