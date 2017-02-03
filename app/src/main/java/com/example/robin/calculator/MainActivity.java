@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button CaseClear = (Button)findViewById(R.id.Clear);
         final TextView Notification = (TextView) findViewById(R.id.textView);
         final TextView CaseTexte = (TextView)findViewById(R.id.MonTexte);
+        CaseTexte.setFocusableInTouchMode(false);
 
         // Create onclick listener
         CaseAddition.setOnClickListener(this);
