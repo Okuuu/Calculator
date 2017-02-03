@@ -59,11 +59,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 CaseDivision.setEnabled(true);
             }
         });
+
+
         Case1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"1");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"2");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"3");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"4");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -111,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"5");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"6");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -135,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"7");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -147,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"8");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -159,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"9");
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(true);
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
@@ -176,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 op1 = 0;
                 op2 = 0;
                 signe = 0;
-                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseTexte.setText(CaseTexte.getText()+"");
                 CaseEgal.setEnabled(false);
                 CaseAddition.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
