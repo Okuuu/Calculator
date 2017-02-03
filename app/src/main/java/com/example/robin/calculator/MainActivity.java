@@ -272,9 +272,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else if(signe == 4){
                     if (op2 == 0){
-                        Notification.setText("Tu ne peux pas diviser par 0");
-                        CaseTexte.setText("");
-                        CaseEgal.setEnabled(false);
+                        Notification.setText("Tu ne peux pas diviser par 0"); //Set the notification zone due to the impossibility to divide by 0
+                        CaseTexte.setText(""); // Display a empty string in the textView
+                        CaseEgal.setEnabled(false); //Disable the sign buttons
                         CaseAddition.setEnabled(false);
                         CaseSoustraction.setEnabled(false);
                         CaseMultiplication.setEnabled(false);
