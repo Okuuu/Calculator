@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseAddition.setEnabled(false);
+                CaseEgal.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
                 CaseMultiplication.setEnabled(false);
                 CaseDivision.setEnabled(false);
@@ -213,6 +214,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseAddition.setEnabled(false);
+                CaseEgal.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
                 CaseMultiplication.setEnabled(false);
                 CaseDivision.setEnabled(false);
@@ -223,11 +225,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-        //Gestion de la mutliplication
+        //Gestion de la multiplication
         CaseMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseAddition.setEnabled(false);
+                CaseEgal.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
                 CaseMultiplication.setEnabled(false);
                 CaseDivision.setEnabled(false);
@@ -242,6 +245,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseAddition.setEnabled(false);
+                CaseEgal.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
                 CaseMultiplication.setEnabled(false);
                 CaseDivision.setEnabled(false);
