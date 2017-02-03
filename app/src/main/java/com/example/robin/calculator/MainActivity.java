@@ -281,6 +281,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         CaseDivision.setEnabled(false);
                     }
                     else{
+                        Notification.setText(""); // Display a empty string in the textView
                         test = (float) op1 / op2; //Make it float if we need it
                         CaseTexte.setText(new DecimalFormat("##.##").format(test)); //Set the decimal format each # are a number
                     }
