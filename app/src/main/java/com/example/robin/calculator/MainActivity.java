@@ -194,6 +194,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseAddition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseEgal.setEnabled(false);
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 1; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -203,8 +208,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //Gestion de la soustraction
         CaseSoustraction.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                CaseEgal.setEnabled(false);
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 2; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -212,20 +223,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-        //Gestion de la mutliplication
+        //Gestion de la multiplication
         CaseMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseEgal.setEnabled(false);
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 3; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
             }
         });
 
-        //Gestion de la mutliplication
+        //Gestion de la division
         CaseDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CaseEgal.setEnabled(false);
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
                 signe = 4; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -253,6 +274,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (op2 == 0){
                         Notification.setText("Tu ne peux pas diviser par 0");
                         CaseTexte.setText("");
+                        CaseEgal.setEnabled(false);
+                        CaseAddition.setEnabled(false);
+                        CaseSoustraction.setEnabled(false);
+                        CaseMultiplication.setEnabled(false);
+                        CaseDivision.setEnabled(false);
                     }
                     else{
                         test = (float) op1 / op2;
