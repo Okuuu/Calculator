@@ -27,12 +27,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button Case7 = (Button)findViewById(R.id.button7);
         Button Case8 = (Button)findViewById(R.id.button8);
         Button Case9 = (Button)findViewById(R.id.button9);
-        Button CaseEgal = (Button)findViewById(R.id.Egal);
-        Button CaseAddition = (Button)findViewById(R.id.Plus);
-        Button CaseSoustraction = (Button)findViewById(R.id.Moins);
-        Button CaseMultiplication = (Button)findViewById(R.id.Multi);
-        Button CaseDivision = (Button)findViewById(R.id.Division);
-        Button CaseClear = (Button)findViewById(R.id.Clear);
+        final Button CaseEgal = (Button)findViewById(R.id.Egal);
+        CaseEgal.setEnabled(false);
+        final Button CaseAddition = (Button)findViewById(R.id.Plus);
+        CaseAddition.setEnabled(false);
+        final Button CaseSoustraction = (Button)findViewById(R.id.Moins);
+        CaseSoustraction.setEnabled(false);
+        final Button CaseMultiplication = (Button)findViewById(R.id.Multi);
+        CaseMultiplication.setEnabled(false);
+        final Button CaseDivision = (Button)findViewById(R.id.Division);
+        CaseDivision.setEnabled(false);
+        final Button CaseClear = (Button)findViewById(R.id.Clear);
         final TextView Notification = (TextView) findViewById(R.id.textView);
         final TextView CaseTexte = (TextView)findViewById(R.id.MonTexte);
 
@@ -47,60 +52,119 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"1");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"2");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"3");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"4");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"5");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"6");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"7");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"8");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         Case9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CaseTexte.setText(CaseTexte.getText()+"9");
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(true);
+                CaseAddition.setEnabled(true);
+                CaseSoustraction.setEnabled(true);
+                CaseMultiplication.setEnabled(true);
+                CaseDivision.setEnabled(true);
             }
         });
         //Gestion du clear
@@ -112,6 +176,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 op1 = 0;
                 op2 = 0;
                 signe = 0;
+                CaseTexte.setText(CaseTexte.getText()+"0");
+                CaseEgal.setEnabled(false);
+                CaseAddition.setEnabled(false);
+                CaseSoustraction.setEnabled(false);
+                CaseMultiplication.setEnabled(false);
+                CaseDivision.setEnabled(false);
             }
         });
 
