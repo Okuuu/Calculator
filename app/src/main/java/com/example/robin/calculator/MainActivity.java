@@ -1,6 +1,5 @@
 package com.example.robin.calculator;
 
-import android.app.AutomaticZenRule;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,9 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static AutomaticZenRule CaseSoustraction;
     int signe, op1, op2;
-    private Object args;
+    float test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button CaseClear = (Button)findViewById(R.id.Clear);
         final TextView Notification = (TextView) findViewById(R.id.textView);
         final TextView CaseTexte = (TextView)findViewById(R.id.MonTexte);
-        CaseTexte.setFocusableInTouchMode(false);
 
         // Create onclick listener
         CaseAddition.setOnClickListener(this);
@@ -196,15 +193,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseAddition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseAddition.setEnabled(false);
-                CaseEgal.setEnabled(false);
-                CaseSoustraction.setEnabled(false);
-                CaseMultiplication.setEnabled(false);
-                CaseDivision.setEnabled(false);
-               signe = 1; // + = 1 | - = 2 | x = 3 | / = 4
+                signe = 1; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
-
             }
         });
 
@@ -213,11 +204,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseSoustraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseAddition.setEnabled(false);
-                CaseEgal.setEnabled(false);
-                CaseSoustraction.setEnabled(false);
-                CaseMultiplication.setEnabled(false);
-                CaseDivision.setEnabled(false);
                 signe = 2; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -225,30 +211,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-        //Gestion de la multiplication
+        //Gestion de la mutliplication
         CaseMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseAddition.setEnabled(false);
-                CaseEgal.setEnabled(false);
-                CaseSoustraction.setEnabled(false);
-                CaseMultiplication.setEnabled(false);
-                CaseDivision.setEnabled(false);
                 signe = 3; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
             }
         });
 
-        //Gestion de la Division
+        //Gestion de la mutliplication
         CaseDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseAddition.setEnabled(false);
-                CaseEgal.setEnabled(false);
-                CaseSoustraction.setEnabled(false);
-                CaseMultiplication.setEnabled(false);
-                CaseDivision.setEnabled(false);
                 signe = 4; // + = 1 | - = 2 | x = 3 | / = 4
                 op1 = Integer.parseInt(CaseTexte.getText()+"");
                 CaseTexte.setText("");
@@ -278,7 +254,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         CaseTexte.setText("");
                     }
                     else{
-                        CaseTexte.setText(op1 / op2 + "");
+                        test = (float) op1 / op2;
+                        CaseTexte.setText(test + "");
                     }
 
                 }
