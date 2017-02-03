@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -15,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         // Find elements
@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     else{
                         test = (float) op1 / op2;
-                        CaseTexte.setText(test + "");
+                        CaseTexte.setText(new DecimalFormat("##.##").format(test));
                     }
 
                 }
