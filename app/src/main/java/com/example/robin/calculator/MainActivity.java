@@ -1,5 +1,6 @@
 package com.example.robin.calculator;
 
+import android.app.AutomaticZenRule;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,7 +9,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static AutomaticZenRule CaseSoustraction;
     int signe, op1, op2;
+    private Object args;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
