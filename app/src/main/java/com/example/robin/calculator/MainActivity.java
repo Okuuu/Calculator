@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-        // Find elements
+        // Find elements and assign them an id
         Button Case0 = (Button)findViewById(R.id.button0);
         Button Case1 = (Button)findViewById(R.id.button1);
         Button Case2 = (Button)findViewById(R.id.button2);
@@ -50,12 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseMultiplication.setOnClickListener(this);
         CaseDivision.setOnClickListener(this);
 
-        //Gestion des touches nombres
+        //Managing the number buttons
         Case0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"0");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"0"); //Display in textView the value of the button
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"1");
+                CaseTexte.setText(CaseTexte.getText()+"1");//Display in textView the value of the button
                 CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -79,9 +79,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"2");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"2"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+""); //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"3");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"3"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -103,9 +103,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"4");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"4"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"5");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"5"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -127,9 +127,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"6");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"6"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -139,9 +139,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"7");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"7"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -151,9 +151,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"8");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"8"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -163,9 +163,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Case9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CaseTexte.setText(CaseTexte.getText()+"9");
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(true);
+                CaseTexte.setText(CaseTexte.getText()+"9"); //Display in textView the value of the button
+                CaseTexte.setText(CaseTexte.getText()+"");  //Display a space after the number
+                CaseEgal.setEnabled(true); //Enable the sign buttons
                 CaseAddition.setEnabled(true);
                 CaseSoustraction.setEnabled(true);
                 CaseMultiplication.setEnabled(true);
@@ -177,12 +177,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 CaseTexte.setText("");
-                //Remise à 0 des variables si Clear
+                //Reset some variable to 0 in case of Clear
                 op1 = 0;
                 op2 = 0;
                 signe = 0;
-                CaseTexte.setText(CaseTexte.getText()+"");
-                CaseEgal.setEnabled(false);
+                CaseTexte.setText(CaseTexte.getText()+""); //Reset the text field to an empty string
+                CaseEgal.setEnabled(false); // Disable the sign buttons
                 CaseAddition.setEnabled(false);
                 CaseSoustraction.setEnabled(false);
                 CaseMultiplication.setEnabled(false);
@@ -195,8 +195,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 signe = 1; // + = 1 | - = 2 | x = 3 | / = 4
-                op1 = Integer.parseInt(CaseTexte.getText()+"");
-                CaseTexte.setText("");
+                op1 = Integer.parseInt(CaseTexte.getText()+""); // Stock the value of the 1st term in op1
+                CaseTexte.setText(""); //Reset the value of the textView
             }
         });
 
@@ -206,8 +206,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 signe = 2; // + = 1 | - = 2 | x = 3 | / = 4
-                op1 = Integer.parseInt(CaseTexte.getText()+"");
-                CaseTexte.setText("");
+                op1 = Integer.parseInt(CaseTexte.getText()+""); // Stock the value of the 1st term in op1
+                CaseTexte.setText(""); //Reset the value of the textView
             }
         });
 
@@ -217,8 +217,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 signe = 3; // + = 1 | - = 2 | x = 3 | / = 4
-                op1 = Integer.parseInt(CaseTexte.getText()+"");
-                CaseTexte.setText("");
+                op1 = Integer.parseInt(CaseTexte.getText()+""); // Stock the value of the 1st term in op1
+                CaseTexte.setText(""); //Reset the value of the textView
             }
         });
 
@@ -227,8 +227,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 signe = 4; // + = 1 | - = 2 | x = 3 | / = 4
-                op1 = Integer.parseInt(CaseTexte.getText()+"");
-                CaseTexte.setText("");
+                op1 = Integer.parseInt(CaseTexte.getText()+""); // Stock the value of the 1st term in op1
+                CaseTexte.setText(""); //Reset the value of the textView
             }
         });
 
@@ -236,27 +236,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         CaseEgal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                op2 = Integer.parseInt(CaseTexte.getText()+"");
+                op2 = Integer.parseInt(CaseTexte.getText()+""); // Stock the value of the 2nd term in op2
                 if (signe == 1) {
-                    Notification.setText("");
-                    CaseTexte.setText(op1 + op2 + "");
+                    Notification.setText(""); //Reset the value of the notification zone
+                    CaseTexte.setText(op1 + op2 + ""); // Do the operation and display it in the textView
                 }
                 else if (signe == 2){
-                    Notification.setText("");
-                    CaseTexte.setText(op1 - op2 + "");
+                    Notification.setText(""); //Reset the value of the notification zone
+                    CaseTexte.setText(op1 - op2 + ""); // Do the operation and display it in the textView
                 }
                 else if (signe == 3){
-                    Notification.setText("");
-                    CaseTexte.setText(op1 * op2 + "");
+                    Notification.setText(""); //Reset the value of the notification zone
+                    CaseTexte.setText(op1 * op2 + ""); // Do the operation and display it in the textView
                 }
                 else if(signe == 4){
                     if (op2 == 0){
-                        Notification.setText("Tu ne peux pas diviser par 0");
-                        CaseTexte.setText("");
+                        Notification.setText("Tu ne peux pas diviser par 0"); //Set the value of the notification zone
+                        CaseTexte.setText(""); // Display an empty space in case of divide by 0
                     }
                     else{
-                        test = (float) op1 / op2;
-                        CaseTexte.setText(new DecimalFormat("##.##").format(test));
+                        test = (float) op1 / op2; //Make it float if we need it
+                        CaseTexte.setText(new DecimalFormat("##.##").format(test)); //Set the decimal format each # are a number
                     }
 
                 }
